@@ -1,0 +1,290 @@
+body{
+    background-color: black;
+}
+
+
+
+
+
+/* All this is for the icon from w3school */
+
+.dropbtn {
+    background-color: black;
+    padding: 13px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: large;
+    display: block;
+  }
+
+
+  .show {display: block;}  
+
+.icon{
+    width: 2rem;
+    height: 2.5rem;
+    filter: grayscale(100%) sepia(100%) hue-rotate(-50deg) saturate(500%);
+      
+}
+
+/* This is the section for the round background image */
+
+.first{
+        place-items: center;
+        padding-top: 5rem;
+
+    }
+.circle {
+    width: 350px;  /* Adjust size */
+    height: 350px;
+    background: url('mountain.jpg') no-repeat center/cover;
+    border-radius: 50%;  /* Makes it round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;  /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+  .h1text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem; 
+  }
+  
+  /* This is for the hiddendiv */
+
+  .hidden{
+    display: none;
+  }
+ 
+            /* This is for the query selector */
+  @media(min-width:700px){
+    .first{
+        place-items: center;
+        margin-top: 6rem;
+    }
+    .circle{
+        
+        width: 50rem;
+        height: 30rem; 
+       
+    }
+    .dropdown{
+        display: none;
+    }
+
+    .hidden {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100px; /* Adjust height as needed */
+        background-color: transparent; /* Change if needed */
+    }
+    
+    .hiddendiv {
+        display: flex;
+        gap: 9rem; /* Space evenly with 2rem gap */
+    }
+    
+    .hiddendiv a {
+        color: white;
+        text-decoration: none; /* Remove underline */
+        font-size: 1.7rem;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .hiddendiv a:hover {
+        color: #ffcc00; /* Highlight effect on hover */
+    }
+    
+  }
+
+  /* This is for the 992px Screen */
+  @media(min-width:700px){
+    .circle{
+        
+        width: 70rem;
+        height: 50rem; 
+       
+    }
+    .text{
+        font-size: 2rem;
+    }
+    .h1text{
+        font-size: 5rem;
+    }
+}
+
+             /* Here is for the explore section */
+  
+.Explore{
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}   
+.exploretxt {
+    width: 25rem; /* Set width */
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Center horizontally */
+    color: white; /* Set text color */
+    font-size: 0.9rem; /* Adjust font size */
+    line-height: 1.6; /* Improve readability */
+}
+
+
+         /* Here is for the media for the text   */
+
+
+@media(min-width:700px){
+    .Explore{
+        font-size: 3rem;
+    }
+    .exploretxt{
+        width: 80rem;
+        font-size: 2rem;
+    }
+}
+
+      /* Here is for the images  to be displayed */
+  
+
+
+      .image-container {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        margin-top: 2rem;
+        gap: 1rem; /* Space between images */
+    }
+    
+    
+    .image-box {
+        position: relative;
+        width: 70%; /* Adjust width for mobile screens */
+        max-width: 300px; /* Optional: Limit max width */
+        height: 350px; /* Make the height longer than the width */
+        overflow: hidden;
+        border-radius: 10px; /* Smooth edges */
+        object-fit: cover;
+    }
+    
+    .image-text {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 5px 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .seemore{
+        text-align:center ;
+        color: blue;
+        font-size: larger;
+    }
+
+       /* Here is for the media query section */
+@media (min-width: 700px) {
+        .image-container {
+            display: flex;
+            flex-direction: row; /* Align images in a row */
+            justify-content: center;
+            gap: 4rem; /* Space between images */
+        }
+    }
+    
+
+
+       /* Here is for the two image to appear */
+
+.imageCilBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically (if needed) */
+        margin-top: 3rem;
+        height: 30rem; /* Optional: Centers vertically on full screen */
+    }
+    
+ .imageCil {
+        position: relative;
+        width: 80%; /* Adjust for responsiveness */
+        max-width: 500px; /* Limit max width */
+        height: 300px; /* Make it rectangular */
+        overflow: hidden;
+        border-radius: 10px; /* Optional: Smooth edges */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ }
+
+ .cusin{
+    text-align: center;
+    color: white;
+    
+ }
+
+ .cusin2{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    width: 25rem;
+ }
+
+    /* Here is for the media for the second section */
+
+@media (min-width: 700px) {
+        .Hybrid {
+            display: flex;
+            justify-content: center; /* Center the content */
+            align-items: center;
+            gap: 2rem; /* Add space between items */
+        }
+    }
+    
+    
+
+            
+    
+    
+
