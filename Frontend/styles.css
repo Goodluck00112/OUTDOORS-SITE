@@ -288,3 +288,22 @@ body{
     
     
 
+    .circle2 {
+        width: 350px;  /* Adjust size */
+        height: 350px;
+        background: url('liver.jpg') no-repeat center/cover;
+        border-radius: 50%;  /* Makes it round */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;  /* Text color */
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+      }
+
+      .first2{
+        place-items: center;
+
+    }
